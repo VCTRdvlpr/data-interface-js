@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import DataInput from './components/data-input/data-input-component';
+import DataOutput from './components/data-output/data-output-component';
 
 function App() {
+  const [dados, setDados] = useState([]);
+
+  const handleSendData = (data) =>{
+    setDados([...dados, data]);
+  };
+
+  const handleRemoveData = (index) =>{
+    const newDados = [...dados];
+    newDados.splice(index, 1);
+    setDados(newDados);
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main-align'>        
+      <DataInput onSendData={handleSendData} />      
+      <DataOutput data={dados} onRemoveData={handleRemoveData} />     
     </div>
   );
 }

@@ -1,0 +1,21 @@
+Objetivo:
+
+Criar uma aplicação que possuirá duas interfaces principais,
+interface1 receberá os dados preenchidos pelo usuário. Já 
+a interface2 deverá receber os dados enviados pela interface1
+e armazená-los.
+
+Requisitos:
+
+Interface1:
+Deverá conter 3 input (nome, idade, e-mail), com um botão 
+que enviará os dados para a interface2.
+
+Interface2:
+Deverá possuir a aparência de uma lista, onde cada novo
+conjunto de dados recebidos ficará organizado em linhas, ao 
+lado de cada linha deverá existir um botão para remover aquele
+conjunto de dados da lista.      
+
+
+                 
