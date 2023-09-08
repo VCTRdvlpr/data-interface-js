@@ -31,10 +31,21 @@ li{
 
 .input-align button{
     margin-top: 15px;
-    padding: 5px;
+    padding: 7px 15px;
     font-size: 1.3em;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 45px;
+    background-color: #000000;
+    color: #ffff;
+    border: none;
+    transition: 0.25s ease-in-out;
+}
+
+.input-align button:hover{
+    background-color: #ffff;
+    color: #000000;
+    transition: 0.25s ease-in-out;
+    font-weight: bold;
 }
 
 .input-item-style{
@@ -55,6 +66,7 @@ li{
 .output-align{    
     display: flex;
     flex-direction: column;
+    align-items:center ;
     width: 25vw;
     gap: 20px;
 
@@ -78,9 +90,9 @@ li{
 }
 
 .main-align{
-    display: flex;
-    gap: 10px;   
-    border: 2px solid orangered;
-       
+    display: flex;     
+    width: 100vw;
+    gap: 400px;          
 }
+
 

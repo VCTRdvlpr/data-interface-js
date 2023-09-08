@@ -17,9 +17,13 @@ function App() {
   };
   
   return (
-    <div className='main-align'>        
-      <DataInput onSendData={handleSendData} />      
-      <DataOutput data={dados} onRemoveData={handleRemoveData} />     
+    <div className='main-align'>      
+      <div>  
+        <DataInput onSendData={handleSendData} />    
+      </div>  
+      <div>        
+        <DataOutput data={dados} onRemoveData={handleRemoveData} />    
+      </div> 
     </div>
   );
 }

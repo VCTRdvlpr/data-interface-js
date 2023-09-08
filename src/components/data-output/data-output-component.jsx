@@ -2,8 +2,9 @@ import React from "react";
 
 function DataOutput({ data, onRemoveData }){
     return(
-        <div>
-            <ul className="output-align">
+        <div className="output-align">
+            <h1>Usuários cadastrados</h1>
+            <ul >
                 {data.map((item, index) =>(
                     <li className="output-item-style" key={index}>
                         Nome: {item.nome} 
@@ -14,7 +15,7 @@ function DataOutput({ data, onRemoveData }){
                         <br></br>
                         <button onClick={() => onRemoveData(index)}>
                             Remover
-                        </button>
+                        </button>                        
                     </li>
                 ))}
             </ul>
